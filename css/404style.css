@@ -1,0 +1,50 @@
+nav{
+    color: darkblue;
+    text-align: left;
+    font-size: 30px;
+}
+h1{
+    color: blue;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+}
+h2{
+    color: #0D0D0D;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+    padding: 15px 0px 15px 15px;
+}
+img{
+    display: block;
+    width: 90%;
+}
+@media screen and (min-width: 750px){
+    h1{
+        font-size: 60px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 35px;
+        font-style: italic;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    img{
+        width: 90%;
+    }
+}

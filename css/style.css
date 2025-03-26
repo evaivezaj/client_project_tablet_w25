@@ -1,0 +1,158 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 2;
+}
+body{
+    font-family: 'Roboto Condensed',sans-serif;
+    background-color: #00274c;
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+h1{
+    color: blue;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    text-decoration: underline;
+    border: 5px solid #200597;
+    background-color: #ffcb0b;
+}
+h2{
+    color: #0D0D0D;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 15px 15px 15px 15px;
+    text-decoration: underline;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+    padding: 15px 0px 15px 15px;
+}
+
+section , footer{
+    padding: 15px 15px 15px 15px;
+    border: 5px solid #ffffff;
+    background-color: rgb(228, 228, 228)
+}
+
+ol{
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 15px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #200597;
+}
+
+div{
+    padding: 20px;
+}
+
+nav{
+    text-align: left;
+    font-size: 30px;
+    border: solid 5px white;
+    background-color: white;
+ }
+
+ .skip-link {
+    background: #ffcb0b;
+    font-size: 30px;
+}
+
+.skip-link a{
+    position: absolute;
+    top: -40px;
+}
+
+.skip-link a:focus {
+    top: 20px;
+}
+
+nav a:hover, nav a:focus , .skip-link a:hover, .skip-link a:focus {
+    font-weight: bold;
+  }
+
+main , header , footer , body{
+    grid-column: 2;
+}
+
+body , main, section, footer{
+    grid-column: 1 / 2;
+}
+
+.logo , .building , .backpack , .group , .sticky {
+    grid-column: 2 / 2;
+}
+
+@media screen and (min-width: 750px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .logo-image{
+        width: 75%;
+        border: white;
+        padding-left: 100px;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
+    p , ol , ul{
+        font-size: 40px;
+    }
+
+    p{
+        font-family: 'Roboto Condensed',sans-serif;
+    }
+
+    ol, ul{
+        list-style-type: circle;
+        padding-left: 100px;
+    }
+
+    h3{
+        font-size: 35px;
+        font-style: italic;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    figcaption{
+        font-size: 20px;
+    }
+
+    .building-image , .backpack-image , .group-image , .sticky-image, .wolverine-image{
+        width: 90%;
+    }
+
+    li::marker{
+        color: #200597;
+    }
+}
